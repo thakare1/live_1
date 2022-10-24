@@ -17,9 +17,9 @@ public class LoaderController {
 	private LoaderService loaderService;
 	
 	@PostMapping("/")
-	public void createLoader(@RequestBody Loader loader){
+	public String createLoaderr(@RequestBody Loader loader){
 		 loaderService.saveLoader(loader);
-		
+		return null;
 	}
 	
 
